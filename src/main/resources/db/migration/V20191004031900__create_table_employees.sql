@@ -34,7 +34,7 @@ jobs table. A not null column.';
 COMMENT ON COLUMN employees.salary IS 'Monthly salary of the employee. Must be greater
 than zero (enforced by constraint emp_salary_min)';
 COMMENT ON COLUMN employees.commission_pct IS 'Commission percentage of the employee; Only employees in sales
-department elgible for commission percentage';
+department eligible for commission percentage';
 COMMENT ON COLUMN employees.manager_id IS 'Manager id of the employee; has same domain as manager_id in
 departments table. Foreign key to employee_id column of employees table.
 (useful for reflexive joins and CONNECT BY query)';
