@@ -14,8 +14,8 @@ ALTER TABLE projects
 
 UPDATE projects SET project_investments =
     CASE WHEN (project_investments < 500) THEN 0
-         WHEN (project_investments < 1500) THEN 1000
-         WHEN (project_investments < 2500) THEN 2000
+         WHEN (project_investments >= 500 AND project_investments < 1500) THEN 1000
+         WHEN (project_investments >= 1500 AND project_investments < 2500) THEN 2000
     END;
 
 CREATE TABLE project_employee(
